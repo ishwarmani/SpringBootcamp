@@ -22,4 +22,27 @@
             <bean id="expressTea" class="com.springcore.restaurant.ExpressTea"/>
         </property>
     </bean>
+    <bean name="complexBean" class="com.springcore.Complex">
+        <property name="list">
+            <list>
+                <value>Hydrogen</value>
+                <value>Argon</value>
+                <value>Helium</value>
+            </list>
+        </property>
+        <property name="set">
+            <set>
+                <value>New Delhi</value>
+                <value>Noida</value>
+                <value>Gurgaon</value>
+            </set>
+        </property>
+        <property name="map">
+            <map>
+                <entry key="India" value="New Delhi"/>
+                <entry key="UK" value="London"/>
+                <entry key="US" value="New York"/>
+            </map>
+        </property>
+    </bean>
 </beans>
