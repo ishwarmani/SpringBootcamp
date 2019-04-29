@@ -26,6 +26,7 @@ public class Execute {
 
         Restaurant restaurant2 = (Restaurant)applicationContext.getBean("restaurant2");
         restaurant2.getHotDrink().prepareHotDrink();
+        System.out.println(applicationContext.isPrototype("restaurant2"));
 
     }
 }
