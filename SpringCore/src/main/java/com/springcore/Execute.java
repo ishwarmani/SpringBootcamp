@@ -24,8 +24,8 @@ public class Execute {
 //        System.out.println(complex.set);
 //        System.out.println(complex.map);
 
-        Restaurant restaurant2 = (Restaurant)applicationContext.getBean("restaurant2");
-        restaurant2.getHotDrink().prepareHotDrink();
+        Restaurant restaurant = (Restaurant)applicationContext.getBean("restaurant");
+        restaurant.getHotDrink().prepareHotDrink();
 //        System.out.println(applicationContext.isPrototype("restaurant2"));
 
     }
