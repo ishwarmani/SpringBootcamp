@@ -9,4 +9,17 @@
         <property name="port" value="3306"/>
         <property name="name" value="mysql"/>
     </bean>
+
+    <bean name="tea" class="com.springcore.restaurant.Tea">
+    </bean>
+    <bean id="expressTea" class="com.springcore.restaurant.ExpressTea">
+    </bean>
+    <bean name="teaRestaurant" class="com.springcore.restaurant.Restaurant">
+        <property name="hotDrink" ref="tea"/>
+    </bean>
+    <bean name="expressTeaRestaurant" class="com.springcore.restaurant.Restaurant">
+        <property name="hotDrink">
+            <bean id="expressTea" class="com.springcore.restaurant.ExpressTea"/>
+        </property>
+    </bean>
 </beans>
