@@ -10,13 +10,13 @@
         <property name="name" value="mysql"/>
     </bean>
 
-    <bean name="tea" class="com.springcore.restaurant.Tea">
-    </bean>
-    <bean id="expressTea" class="com.springcore.restaurant.ExpressTea">
-    </bean>
-    <bean name="teaRestaurant" class="com.springcore.restaurant.Restaurant">
-        <property name="hotDrink" ref="tea"/>
-    </bean>
+    <!--<bean name="tea" class="com.springcore.restaurant.Tea">-->
+    <!--</bean>-->
+    <!--<bean id="expressTea" class="com.springcore.restaurant.ExpressTea">-->
+    <!--</bean>-->
+    <!--<bean name="teaRestaurant" class="com.springcore.restaurant.Restaurant">-->
+        <!--<property name="hotDrink" ref="tea"/>-->
+    <!--</bean>-->
     <bean name="expressTeaRestaurant" class="com.springcore.restaurant.Restaurant">
         <property name="hotDrink">
             <bean id="expressTea" class="com.springcore.restaurant.ExpressTea"/>
@@ -45,4 +45,8 @@
             </map>
         </property>
     </bean>
+
+    <bean name="tea" class="com.springcore.restaurant.Tea"></bean>
+    <bean name="hotDrink" class="com.springcore.restaurant.ExpressTea"></bean>
+    <bean name="restaurant2" class="com.springcore.restaurant.Restaurant" autowire="byName"/>
 </beans>
