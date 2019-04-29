@@ -1,5 +1,7 @@
 package com.springcore.restaurant;
 
+import org.springframework.beans.factory.annotation.Required;
+
 public class Restaurant {
 
     HotDrink hotDrink;
@@ -15,6 +17,7 @@ public class Restaurant {
         return hotDrink;
     }
 
+    @Required
     public void setHotDrink(HotDrink hotDrink) {
         this.hotDrink = hotDrink;
     }
