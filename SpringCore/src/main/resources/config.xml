@@ -46,7 +46,8 @@
         </property>
     </bean>
 
-    <!--<bean name="tea" class="com.springcore.restaurant.Tea"></bean>-->
+    <bean name="tea" class="com.springcore.restaurant.Tea"></bean>
     <bean name="hotDrink" class="com.springcore.restaurant.ExpressTea"></bean>
-    <bean name="restaurant2" class="com.springcore.restaurant.Restaurant" autowire="byType"/>
+    <!--<bean name="restaurant2" class="com.springcore.restaurant.Restaurant" autowire="byType"/>-->
+    <bean name="restaurant2" class="com.springcore.restaurant.Restaurant" autowire="constructor"/>
 </beans>
